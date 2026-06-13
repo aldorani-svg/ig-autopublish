@@ -1,0 +1,23 @@
+{
+  "_comment": "Posting queue for @laylaaldorani. Each item publishes once, in order, on the next scheduled slot (Sun/Tue/Thu 20:30 Asia/Qatar). 'status' flips to 'posted' automatically after a successful publish. Add new items to the bottom; the pipeline always picks the topmost item still marked 'queued'.",
+  "posts": [
+    {
+      "id": "01_quote",
+      "image": "images/01_quote.png",
+      "status": "queued",
+      "caption": "I'm not a strict vegan, and I'm not asking you to be. Most of the benefit comes from eating mostly plants, most of the time. Not perfection, consistency.\n\nWhat's one meal this week you could make plant-forward?\n\n#plantforward #guthealth #womenswellness #plantbasednutrition #wellnessqatar"
+    },
+    {
+      "id": "02_stress",
+      "image": "images/02_stress.png",
+      "status": "queued",
+      "caption": "Stress doesn't just live in your head. It changes how hungry you feel, what you reach for, and how your body holds onto it.\n\nWhen cortisol stays high, your appetite for quick energy climbs, that's biology, not weakness.\n\nThe fix isn't more willpower. It's steadying the nervous system first.\n\nWhat does stress make you reach for?\n\n#nervoussystem #guthealth #womenswellness #stressandfood #wellnessqatar #realfood"
+    },
+    {
+      "id": "03_insight",
+      "image": "images/03_insight.png",
+      "status": "queued",
+      "caption": "All-or-nothing is why most changes don't stick. You go hard for a week, miss one day, feel like you failed, and quit.\n\nYour body doesn't need perfect. It needs consistent. A few steady swaps, most days, beat a dramatic overhaul you abandon by Friday.\n\nStart with one thing, small enough that you'll still do it next week.\n\nWhat's your one thing?\n\n#plantforward #sustainablehabits #guthealth #womenswellness #realfood #wellnessqatar"
+    }
+  ]
+}

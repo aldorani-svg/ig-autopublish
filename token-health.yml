@@ -1,0 +1,22 @@
+name: Token health check
+
+# Runs on the 1st and 15th of each month at 06:00 UTC.
+# If the access token has expired or broken, this job FAILS and GitHub emails
+# you automatically, your cue to run refresh_token.py and update the secret.
+on:
+  schedule:
+    - cron: "0 6 1,15 * *"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify token is still valid
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python publish.py --check-token
