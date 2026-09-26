@@ -99,8 +99,8 @@ nav.jump a:hover{background:var(--teal-soft);color:var(--teal-deep)}
 .line-head{display:grid;gap:8px;margin-bottom:22px}
 .line-head .brandtag{font:600 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .line-head p{color:var(--ink-2);max-width:60ch}
-.grid{display:grid;grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));gap:12px}
-@media (max-width:600px){.grid{--cols:var(--cols-sm,2)}}
+.grid{--c:var(--cols,4);display:grid;grid-template-columns:repeat(var(--c),minmax(0,1fr));gap:12px}
+@media (max-width:600px){.grid{--c:var(--cols-sm,2)}}
 .also{margin-top:14px;color:var(--ink-2);font-size:.95rem}.also b{font-weight:600;color:var(--ink)}
 .card{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
 .card .ph{background:var(--tile);padding:10px;aspect-ratio:var(--ar,1.3);overflow:hidden;min-height:0;max-width:100%}
@@ -198,6 +198,43 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 html{scroll-behavior:smooth;scroll-padding-top:64px}
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;zoom:.8}
+  nav.jump,.cgrid button{display:none!important}
+  html{scroll-behavior:auto}
+  section{padding-block:26px}
+  .spec{position:static}
+  .card,.spec,.prog,.cl,.steps li,.numbers,.visit,.do li,.awards li,.pl-band,.photos,tr,.line-head,.apps{break-inside:avoid}
+  h2,h3,.sec-head,.line-head{break-after:avoid}
+  #portfolio .line{break-before:page;padding-top:0;border-top:0}
+  #portfolio .line:first-of-type{break-before:auto}
+  #specs,#sectors,#programmes,#clients{break-before:page}
+  .grid{--c:var(--pcols,var(--cols,4))}
+  .cover-grid{grid-template-columns:1.05fr 1fr}
+  .show{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1.1fr .9fr}
+  .pl-band{grid-template-columns:1fr 1.4fr}
+  .line{grid-template-columns:1fr 230px}
+  .numbers,.facts,.cgrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .facts div:nth-child(2){border-right:1px solid #ffffff1f}
+  .cols3,.clients{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .row{grid-template-columns:110px 1fr;gap:12px}
+  .cover-tag{display:block}
+  .awards{grid-template-columns:repeat(5,1fr);border-top:3px solid var(--teal);border-left:0;gap:0;padding-left:0}
+  .awards li{padding:18px 16px 0 0}
+  .awards li::before{top:-9px;left:0}
+  .cover h1{font-size:3.6rem}
+  #awards .wrap{break-inside:avoid}
+  .cl p{overflow-wrap:break-word;font-size:1rem}
+  .cl{min-width:0}
+  .card figcaption{padding:6px 8px;font-size:.8rem}
+  .card .ph{padding:6px}
+  .line{padding-block:0 12px;gap:20px}
+  .line-head{margin-bottom:12px}
+  .grid{gap:8px}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -393,11 +430,11 @@ const P='img/p/';
 const img=(pre,n)=>P+pre+'-'+n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.jpg';
 const L=[
  {id:'meals',brand:'Raw',t:'Ready-to-eat',s:'Meals',d:'No cooking. No planning. Just consistency. Chef-built plant-based bowls for grab-and-go, meal plans and catering.',
-  items:[1,2,3,4,5,6,7,8,9].map(i=>({n:'Meal box '+i,src:P+'meal-meal'+i+'.jpg'})),showName:false,cols:3,csm:2,ar:1.4,
+  items:[1,2,3,4,5,6,7,8,9].map(i=>({n:'Meal box '+i,src:P+'meal-meal'+i+'.jpg'})),showName:false,cols:3,csm:2,pcols:5,ar:1.4,
   fmt:'Grab &amp; go · Meal plan subscription · HORECA packaging · Catering packaging',sto:'Chilled below 4°C',temp:'fresh',life:'48 hours',apps:['Grab &amp; go','Catering','Meal plan subscription'],pl:false},
  {id:'juices',brand:'Raw',t:'Cold-pressed',s:'Juices',d:'Rich in easy-to-absorb vitamins, minerals, proteins and enzymes. Cold pressing preserves the natural nutrients.',
   items:['Apple','Avocado','Beetroot','Carrot','Cucumber','Cocktail','Grapefruit','Guava','Green apple','Kiwi','Lemon','Lemon mint','Lemonade','Lime','Mango','Orange','Pomegranate','Pineapple','Strawberry','Watermelon'].map(n=>({n,src:img('juice',n)})).concat([{n:'Cool Crush · apple, pineapple, mint · 500 ml',src:P+'juice-cool-crush.jpg'}]),
-  cols:7,csm:3,ar:.55,
+  cols:7,csm:3,pcols:11,ar:.55,
   fmt:'250 ml · 330 ml · 500 ml · 1000 ml',sto:'Refrigerated 0–5°C',temp:'fresh',life:'72 hours',apps:['Consistent daily high-volume supply','Customised flavours'],pl:true},
  {id:'spreads',brand:'Raw',t:'Plant-based',s:'Spreads',d:'Premium nut spreads from roasted nuts, enriched with superfoods. No added sugar, oil or preservatives.',
   items:['Creamy peanut butter','Cinnamon almond butter','Chocolate almond butter','Chocolate hazelnut butter','Creamy almond butter'].map(n=>({n,src:img('spread',n)})),cols:5,csm:3,ar:1,
@@ -406,7 +443,7 @@ const L=[
   items:['Potato harra','Baba ghanouj','Stuffed grape leaves','Hummus tahini','Taboule salad','Vegan garlic dip'].map(n=>({n,src:img('mezze',n)})),cols:3,csm:2,ar:1.15,
   fmt:'Individual potties (retail) · Bulk packs (foodservice)',sto:'Chilled 0–4°C',temp:'fresh',life:'48 hours',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants'],pl:true},
  {id:'snacks',brand:'Raw',t:'Vegan',s:'Snacks',d:'Granolas, trail mixes, fruit chips and kale chips with ambient shelf life.',
-  items:['Snackers delight','Heart throb',"Mama's gold",'Vibrant glow','Smokey trail mix','Banana chips','Original granola mix','Vanilla granola','Choco monkey mix','Kiwi chips','Chili kale chips','Cheesy kale chips'].map(n=>({n,src:img('snack',n)})),cols:6,csm:3,ar:.95,
+  items:['Snackers delight','Heart throb',"Mama's gold",'Vibrant glow','Smokey trail mix','Banana chips','Original granola mix','Vanilla granola','Choco monkey mix','Kiwi chips','Chili kale chips','Cheesy kale chips'].map(n=>({n,src:img('snack',n)})),cols:6,csm:3,pcols:6,ar:.95,
   fmt:'Individual packs (retail) · Bulk (HORECA)',sto:'Ambient / dry storage',temp:'amb',life:'90 days',apps:['Airlines &amp; snack boxes','Hotels &amp; minibars','Corporate offices','Schools &amp; kids programmes','Retail chains'],pl:true},
  {id:'cakes',brand:'Raw',t:'Gluten-free',s:'Cakes',d:'Gluten-free cakes for retail, HORECA and institutional supply.',
   items:['Hazelnut nutella cake','Apple cinnamon cake','Blueberry cheesecake','Banoffee cake','Tiramisu cake','Strawberry cheesecake','Vanilla cheesecake','Chocolate crumb pie','Super snickers cake'].map(n=>({n,src:img('cake',n)})),cols:3,csm:2,ar:1.45,full:true,
@@ -418,13 +455,13 @@ const L=[
   items:['Burger patty','Hot dawg','Vegan kibbeh','Spinach fatayer','Pumpkin kibbeh',"Minc'd meat","Chik'n nuggets",'Potato kibbeh','Feesh fingers'].map(n=>({n,src:img('nosh',n)})),cols:3,csm:2,ar:1.45,
   fmt:'270 g · 400 g · 500 g · 1 kg',sto:'Frozen',temp:'frozen',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants','Corporate dining','Retail grocery'],pl:false},
  {id:'ffjuice',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Juices',d:'Preservative-free fruit and vegetable juice blends for retail, HORECA and institutional supply.',
-  items:['Lemon mint','Sunshine sipper','Rocket fuel','Power punch','Tropical treat','Pineapple','Pomegranate','Beetroot','Watermelon','Green apple','Orange','Avocado','Guava','Mango','Carrot','Red apple','Strawberry','Lemonade'].map(n=>({n,src:img('ffjuice',n)})),cols:6,csm:3,ar:.55,
+  items:['Lemon mint','Sunshine sipper','Rocket fuel','Power punch','Tropical treat','Pineapple','Pomegranate','Beetroot','Watermelon','Green apple','Orange','Avocado','Guava','Mango','Carrot','Red apple','Strawberry','Lemonade'].map(n=>({n,src:img('ffjuice',n)})),cols:6,csm:3,pcols:9,ar:.55,
   fmt:'250 ml · 1000 ml',sto:'Refrigerated 0–5°C',temp:'fresh',life:'3 days',apps:['Retail','Schools &amp; kids programmes','Cafés &amp; grab-and-go','Customised flavours'],pl:false},
  {id:'ffpacks',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Fruit packs',d:'Fresh, clean, ready-to-eat fruit packs: pink apples with seedless grapes, and pink apple slices.',
   items:[{n:'Pink apples &amp; seedless grapes · Pink apple slices',src:P+'ffpack-fruit-packs.jpg'}],cols:1,csm:1,ar:2.4,
   fmt:'Individual packs (retail) · Bulk packs (HORECA)',sto:'Refrigerated 0–5°C',temp:'fresh',life:'21 days',apps:['Airlines &amp; snack boxes','Convenience stores','Hotels &amp; minibars','Schools &amp; kids programmes','Cafés &amp; grab-and-go'],pl:true},
  {id:'ffpops',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Ice pops',d:'Made with 100% real fruit. Freeze. Enjoy. Repeat.',
-  items:['Sonic lime','Rocket juice pop','Mango passion','Watermelon lemon mint','Pina colada','Strawberry banana'].map(n=>({n,src:img('pop',n)})),cols:6,csm:3,ar:.55,
+  items:['Sonic lime','Rocket juice pop','Mango passion','Watermelon lemon mint','Pina colada','Strawberry banana'].map(n=>({n,src:img('pop',n)})),cols:6,csm:3,pcols:6,ar:.55,
   fmt:'Bulk packs (foodservice)',sto:'Chilled 0–4°C',temp:'fresh',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants','Corporate offices','Health &amp; wellness programmes'],pl:false}
 ];
 // sector columns: hotels, airlines, cafes, corporate, schools, retail, wellness
@@ -435,8 +472,8 @@ document.getElementById('lines').innerHTML=L.map(l=>`
  <article class="line" id="${l.id}">
   <div>
    <div class="line-head"><span class="brandtag">${l.brand}</span><h3>${l.t} <span class="s" style="font-family:var(--script);font-weight:400;color:var(--teal)">${l.s}</span></h3><p>${l.d}</p></div>
-   <div class="grid" style="--cols:${l.cols};--cols-sm:${l.csm}">
-    ${l.items.map(i=>`<figure class="card"><div class="ph" style="--ar:${l.ar}${l.full?';padding:0':''}"><img loading="lazy" src="${i.src}" alt="${i.n.replace(/&amp;/g,'and')}"${l.full?' style="width:100%;height:100%;object-fit:cover"':''}></div>${l.showName===false?'':`<figcaption>${i.n}</figcaption>`}</figure>`).join('')}
+   <div class="grid" style="--cols:${l.cols};--cols-sm:${l.csm};--pcols:${l.pcols||l.cols}">
+    ${l.items.map(i=>`<figure class="card"><div class="ph" style="--ar:${l.ar}${l.full?';padding:0':''}"><img src="${i.src}" alt="${i.n.replace(/&amp;/g,'and')}"${l.full?' style="width:100%;height:100%;object-fit:cover"':''}></div>${l.showName===false?'':`<figcaption>${i.n}</figcaption>`}</figure>`).join('')}
    </div>
    ${l.extra?`<p class="also"><b>Also in the range:</b> ${l.extra.join(', ')}</p>`:''}
   </div>
