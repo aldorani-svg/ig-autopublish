@@ -1,0 +1,494 @@
+<title>Raw ME at Hospitality Qatar 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=Caveat+Brush&display=swap">
+<style>
+:root{
+  --bg:#F3F7F6; --paper:#FFFFFF; --ink:#111716; --ink-2:#3F4B49; --muted:#6B7876;
+  --teal:#4E9E94; --teal-deep:#2F7A71; --teal-soft:#E1EFEC; --line:#D5E2DF;
+  --band:#111716; --band-ink:#F3F7F6; --tile:#FFFFFF; --logo-filter:none;
+  --display:"Barlow Condensed","Arial Narrow","Roboto Condensed",sans-serif;
+  --body:"Barlow","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --script:"Caveat Brush","Segoe Script","Bradley Hand",cursive;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1413; --paper:#151E1D; --ink:#EDF3F2; --ink-2:#C2CFCC; --muted:#8FA09D;
+    --teal:#6CC1B5; --teal-deep:#8ED3C9; --teal-soft:#1B2B29; --line:#26403C;
+    --band:#070B0A; --band-ink:#EDF3F2; --tile:#FFFFFF; --logo-filter:invert(1);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1413; --paper:#151E1D; --ink:#EDF3F2; --ink-2:#C2CFCC; --muted:#8FA09D;
+  --teal:#6CC1B5; --teal-deep:#8ED3C9; --teal-soft:#1B2B29; --line:#26403C;
+  --band:#070B0A; --band-ink:#EDF3F2; --tile:#FFFFFF; --logo-filter:invert(1);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:none}
+h2 .s,h1 .s{font-family:var(--script);font-weight:400;color:var(--teal);letter-spacing:0;margin-left:.1em}
+h3{font-size:1.9rem}
+p{margin:0}
+.eyebrow{font:600 .78rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep)}
+.lede{font-size:1.08rem;color:var(--ink-2);max-width:62ch}
+section{padding-block:72px;border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:14px;margin-bottom:36px}
+a{color:var(--teal-deep)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* Cover */
+.cover{background:var(--paper);border-bottom:1px solid var(--line)}
+.cover-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:54px;width:auto;filter:var(--logo-filter)}
+.brand span{font:600 .72rem/1.25 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cover-tag{font:600 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:right}
+.cover-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding-block:28px 48px}
+.cover h1{font-size:clamp(2.8rem,6.5vw,4.6rem);text-transform:uppercase}
+.cover h1 .s{display:block;text-transform:none;font-size:.62em;margin:6px 0 0}
+.cover .lede{margin-top:20px}
+.hero-img{border-radius:6px;overflow:hidden;aspect-ratio:4/3;max-width:100%}
+.hero-img img{object-position:62% 50%}
+.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--band);color:var(--band-ink)}
+.facts div{padding:18px 20px;border-right:1px solid #ffffff1f;display:grid;gap:6px}
+.facts div:last-child{border-right:0}
+.facts b{font:700 1.5rem/1 var(--display);letter-spacing:.01em}
+.facts small{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+
+/* Nav */
+nav.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.jump .wrap{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
+nav.jump a{flex:none;font:600 .82rem/1 var(--body);color:var(--ink-2);text-decoration:none;padding:9px 12px;border-radius:999px}
+nav.jump a:hover{background:var(--teal-soft);color:var(--teal-deep)}
+
+/* At the show */
+.show{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.visit{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:28px;display:grid;gap:18px;align-content:start}
+.row{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+.row:last-child{border-bottom:0;padding-bottom:0}
+.row dt{font:600 .75rem/1.6 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.row dd{margin:0;font-weight:500}
+.row dd em{font-style:normal;color:var(--muted);font-size:.9rem}
+.do{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.do li{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.leaf{width:22px;height:22px;color:var(--teal);margin-top:2px}
+.do b{display:block;font-family:var(--display);font-size:1.25rem;font-weight:700;letter-spacing:.01em}
+.do span{color:var(--ink-2)}
+
+/* About */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.about .copy{display:grid;gap:16px;color:var(--ink-2);max-width:60ch}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.photos img{width:100%;aspect-ratio:1.25;object-fit:cover;border-radius:4px;display:block}
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:40px}
+.numbers div{background:var(--paper);padding:20px;display:grid;gap:6px;align-content:start}
+.numbers b{font:800 2.3rem/1 var(--display);color:var(--teal-deep);font-variant-numeric:tabular-nums}
+.numbers span{font:600 .75rem/1.3 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.numbers small{color:var(--muted);font-size:.85rem;line-height:1.4}
+.certs{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font:600 .78rem/1 var(--body);padding:8px 12px;border-radius:999px;background:var(--teal-soft);color:var(--teal-deep)}
+
+/* Product lines */
+.line{display:grid;grid-template-columns:1fr 250px;gap:28px;padding-block:44px;border-top:1px solid var(--line)}
+.line:first-of-type{border-top:0;padding-top:0}
+.line-head{display:grid;gap:8px;margin-bottom:22px}
+.line-head .brandtag{font:600 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.line-head p{color:var(--ink-2);max-width:60ch}
+.grid{--c:var(--cols,4);display:grid;grid-template-columns:repeat(var(--c),minmax(0,1fr));gap:12px}
+@media (max-width:600px){.grid{--c:var(--cols-sm,2)}}
+.also{margin-top:14px;color:var(--ink-2);font-size:.95rem}.also b{font-weight:600;color:var(--ink)}
+.card{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.card .ph{background:var(--tile);padding:10px;aspect-ratio:var(--ar,1.3);overflow:hidden;min-height:0;max-width:100%}
+.card .ph img{width:100%;height:100%;object-fit:contain;display:block}
+.card figcaption{padding:10px 12px;font-weight:600;font-size:.92rem;line-height:1.3;overflow-wrap:anywhere}
+.spec{background:var(--teal);color:#fff;border-radius:8px;padding:22px;display:grid;gap:16px;align-content:start;align-self:start;position:sticky;top:72px}
+.spec h4{margin:0;font:800 1.5rem/1 var(--display)}
+.spec h4 .s{font-family:var(--script);font-weight:400;display:block;font-size:1.25em}
+.spec dl{margin:0;display:grid;gap:14px}
+.spec dt{font:600 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.8;margin-bottom:4px}
+.spec dd{margin:0;font-weight:500;line-height:1.4}
+.spec .pl{border-top:1px solid #ffffff40;padding-top:12px;font-size:.86rem}
+.apps{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:4px}
+.apps b{font:600 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.apps span{font-size:.82rem;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink-2)}
+
+/* Tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font:600 .72rem/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:var(--teal-soft)}
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.temp{display:inline-block;font:600 .74rem/1 var(--body);padding:5px 8px;border-radius:4px;white-space:nowrap}
+.t-fresh{background:#DCEFE9;color:#1F6157}
+.t-frozen{background:#DCE7F5;color:#244C7A}
+.t-amb{background:#F3EBDA;color:#735A22}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--teal);display:inline-block}
+.m td:not(:first-child),.m th:not(:first-child){text-align:center}
+.note{margin-top:12px;color:var(--muted);font-size:.85rem}
+
+/* Programmes, private label */
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.prog{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:24px;display:grid;gap:14px;align-content:start}
+.prog h3{font-size:1.6rem;color:var(--teal-deep)}
+.prog ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.prog li{display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:center}
+.prog .leaf{width:16px;height:16px;margin:0}
+.pl-band{margin-top:28px;background:var(--band);color:var(--band-ink);border-radius:8px;padding:28px;display:grid;grid-template-columns:1fr 1.4fr;gap:28px;align-items:center}
+.pl-band h3{font-size:2rem}
+.pl-band h3 .s{font-family:var(--script);font-weight:400;color:var(--teal)}
+.pl-band ul{margin:0;padding-left:18px;display:grid;gap:6px;opacity:.9}
+
+/* Awards */
+.awards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:3px solid var(--teal)}
+.awards li{padding:18px 16px 0 0;display:grid;gap:8px;align-content:start;position:relative}
+.awards li::before{content:"";position:absolute;top:-9px;left:0;width:15px;height:15px;border-radius:50%;background:var(--paper);border:3px solid var(--teal)}
+.awards b{font:800 2rem/1 var(--display);color:var(--teal-deep)}
+.awards span{font-size:.92rem;color:var(--ink-2);line-height:1.45}
+
+/* Clients */
+.clients{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cl{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px}
+.cl h3{font:600 .75rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.cl p{font-family:var(--display);font-weight:600;font-size:1.15rem;line-height:1.45;color:var(--ink)}
+.cl p i{font-style:normal;color:var(--teal);padding-inline:6px}
+
+/* Steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:20px;display:grid;gap:8px;align-content:start}
+.steps li::before{content:counter(s);font:800 2.2rem/1 var(--display);color:var(--teal)}
+.steps b{font:700 1.2rem/1.1 var(--display)}
+.steps span{color:var(--ink-2);font-size:.92rem;line-height:1.45}
+
+/* Contact */
+.contact{background:var(--teal);color:#fff;border-top:0}
+.contact h2 .s{color:var(--band)}
+.contact .lede{color:#ffffffe6}
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#ffffff40;border-radius:8px;overflow:hidden;margin-top:32px}
+.cgrid div{background:var(--teal);padding:20px;display:grid;gap:8px;align-content:start}
+.cgrid small{font:600 .72rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+.cgrid b{font:700 1.3rem/1.2 var(--display);user-select:all;overflow-wrap:anywhere}
+.cgrid button{justify-self:start;font:600 .78rem/1 var(--body);background:#ffffff26;color:#fff;border:1px solid #ffffff59;border-radius:999px;padding:7px 12px;cursor:pointer}
+.cgrid button:hover{background:#ffffff40}
+footer{background:var(--band);color:var(--band-ink);padding-block:22px;font-size:.82rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;opacity:.75}
+
+@media (max-width:900px){
+  .cover-grid,.show,.about,.pl-band{grid-template-columns:1fr}
+  .line{grid-template-columns:1fr}
+  .spec{position:static}
+  .numbers,.facts,.cgrid{grid-template-columns:repeat(2,1fr)}
+  .facts div:nth-child(2){border-right:0}
+  .cols3,.clients{grid-template-columns:1fr}
+  .awards{grid-template-columns:1fr;border-top:0;border-left:3px solid var(--teal);gap:18px;padding-left:18px}
+  .awards li{padding:0}
+  .awards li::before{top:4px;left:-28px}
+  .steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:480px){
+  section{padding-block:52px}
+  .steps{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:2px}
+  .cover-tag{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+@page{size:A4 landscape;margin:10mm}
+@media print{
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;zoom:.8}
+  nav.jump,.cgrid button{display:none!important}
+  html{scroll-behavior:auto}
+  section{padding-block:26px}
+  .spec{position:static}
+  .card,.spec,.prog,.cl,.steps li,.numbers,.visit,.do li,.awards li,.pl-band,.photos,tr,.line-head,.apps{break-inside:avoid}
+  h2,h3,.sec-head,.line-head{break-after:avoid}
+  #portfolio .line{break-before:page;padding-top:0;border-top:0}
+  #portfolio .line:first-of-type{break-before:auto}
+  #specs,#sectors,#programmes,#clients{break-before:page}
+  .grid{--c:var(--pcols,var(--cols,4))}
+  .cover-grid{grid-template-columns:1.05fr 1fr}
+  .show{grid-template-columns:1fr 1fr}
+  .about{grid-template-columns:1.1fr .9fr}
+  .pl-band{grid-template-columns:1fr 1.4fr}
+  .line{grid-template-columns:1fr 230px}
+  .numbers,.facts,.cgrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .facts div:nth-child(2){border-right:1px solid #ffffff1f}
+  .cols3,.clients{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .row{grid-template-columns:110px 1fr;gap:12px}
+  .cover-tag{display:block}
+  .awards{grid-template-columns:repeat(5,1fr);border-top:3px solid var(--teal);border-left:0;gap:0;padding-left:0}
+  .awards li{padding:18px 16px 0 0}
+  .awards li::before{top:-9px;left:0}
+  .cover h1{font-size:3.6rem}
+  #awards .wrap{break-inside:avoid}
+  .cl p{overflow-wrap:break-word;font-size:1rem}
+  .cl{min-width:0}
+  .card figcaption{padding:6px 8px;font-size:.8rem}
+  .card .ph{padding:6px}
+  .line{padding-block:0 12px;gap:20px}
+  .line-head{margin-bottom:12px}
+  .grid{gap:8px}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M12 2.5c-4.2 4.1-6.5 7.9-6.5 11.3a6.5 6.5 0 0 0 13 0c0-3.4-2.3-7.2-6.5-11.3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 9v11.5M8.6 13.4 12 16.2l3.4-2.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="cover-top">
+      <div class="brand"><img src="img/raw-logo.png" alt="Raw logo"><span>Raw Middle East<br>Simply Nourishing</span></div>
+      <div class="cover-tag">Corporate guide · Hospitality Qatar 2026</div>
+    </div>
+    <div class="cover-grid">
+      <div>
+        <p class="eyebrow">Qatar's plant-based manufacturing partner since 2010</p>
+        <h1 style="margin-top:14px">Plant-based supply for Qatar's kitchens <span class="s">#FueledByRaw</span></h1>
+        <p class="lede">A buyer's guide to Raw Middle East for hotel, airline, catering, retail and institutional teams meeting us during Hospitality Qatar 2026. Eleven product lines, all made in one 100% plant-based, ISO 22000 and HACCP certified facility in Doha.</p>
+      </div>
+      <div class="hero-img"><img src="img/hero.jpg" alt="Raw meals and cold-pressed juices served at a poolside table"></div>
+    </div>
+  </div>
+  <div class="facts">
+    <div><small>Dates</small><b>12–14 Oct 2026</b></div>
+    <div><small>Venue</small><b>DECC, Doha</b></div>
+    <div><small>Hours</small><b>11:00–21:00</b></div>
+    <div><small>Edition</small><b>11th Hospitality Qatar</b></div>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Guide sections">
+  <div class="wrap">
+    <a href="#show">At the show</a><a href="#about">About Raw</a><a href="#portfolio">Products</a><a href="#specs">Spec sheet</a><a href="#sectors">By sector</a><a href="#programmes">Programmes</a><a href="#awards">Awards</a><a href="#clients">Clients</a><a href="#partner">Partner with us</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section id="show">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Book a meeting</p><h2>Meet us during <span class="s">the show</span></h2></div>
+    <div class="show">
+      <dl class="visit">
+        <div class="row"><dt>Event</dt><dd>Hospitality Qatar 2026, 11th edition</dd></div>
+        <div class="row"><dt>Dates</dt><dd>Monday 12 to Wednesday 14 October 2026</dd></div>
+        <div class="row"><dt>Hours</dt><dd>11:00 to 21:00 daily</dd></div>
+        <div class="row"><dt>Venue</dt><dd>Doha Exhibition and Convention Center (DECC), West Bay</dd></div>
+        <div class="row"><dt>Meetings</dt><dd>By appointment only. The Raw team is attending the show, not exhibiting.</dd></div>
+        <div class="row"><dt>Book</dt><dd>Email order@raw-me.com or message +974 5080 9900 to meet at DECC or at your venue during show week</dd></div>
+      </dl>
+      <ul class="do">
+        <li><svg class="leaf"><use href="#leaf"/></svg><div><b>Book a tasting</b><span>We arrange a tasting of meals, mezze, cold-pressed juices, gluten-free cakes and frozen lines for your team, as they would reach your guests.</span></div></li>
+        <li><svg class="leaf"><use href="#leaf"/></svg><div><b>Talk private label</b><span>Bring your brief. We manufacture under your brand and adapt recipes, formats and packaging.</span></div></li>
+        <li><svg class="leaf"><use href="#leaf"/></svg><div><b>Get specification sheets</b><span>Formats, storage and shelf life for every line, ready for your procurement and food safety teams.</span></div></li>
+        <li><svg class="leaf"><use href="#leaf"/></svg><div><b>Arrange samples and a trial</b><span>Leave with a sample plan for your outlet, flight programme, school or office.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="sec-head"><p class="eyebrow">Who we are</p><h2>Fueled by <span class="s">Raw</span></h2></div>
+        <div class="copy">
+          <p>Raw Middle East is a plant-based food manufacturing platform in the GCC, established in Qatar in 2010. We operate from a 1,787 sqm production facility and are a 100% plant-based manufacturer certified to ISO 22000 and HACCP.</p>
+          <p>We supply retail brands, airlines, hospitality groups and institutions across the region. Our capabilities cover private label manufacturing, ready-to-eat plant-based meals, fresh and cold-pressed beverages, fruit snack programmes for schools and customised institutional catering.</p>
+          <p>Our focus is innovation and healthy nutrition, supporting growing demand for sustainable, plant-based food across the GCC.</p>
+        </div>
+        <div class="certs"><span class="chip">ISO 22000</span><span class="chip">HACCP</span><span class="chip">ISOQAR registered · UKAS</span><span class="chip">Qatari Product</span><span class="chip">100% plant-based facility</span></div>
+      </div>
+      <div class="photos">
+        <img src="img/p/factory-1.jpg" alt="Production line at the Raw factory">
+        <img src="img/p/factory-2.jpg" alt="Quality team inspecting produce">
+        <img src="img/p/factory-3.jpg" alt="Oranges being prepared for juicing">
+        <img src="img/p/factory-4.jpg" alt="Fruit washing station">
+      </div>
+    </div>
+    <div class="numbers">
+      <div><b>1,787</b><span>sqm factory</span><small>Dedicated to plant-based manufacturing</small></div>
+      <div><b>03</b><span>Cold rooms</span><small>Consistent cold-chain integrity</small></div>
+      <div><b>45</b><span>Production staff</span><small>Daily large-scale output</small></div>
+      <div><b>10</b><span>Admin team</span><small>Logistics, QA and client coordination</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Product portfolio</p><h2>Eleven lines, <span class="s">one kitchen</span></h2><p class="lede">Fresh, chilled, frozen and ambient programmes for every channel. Private label is available on every line marked below.</p></div>
+    <div id="lines"></div>
+  </div>
+</section>
+
+<section id="specs">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">For procurement</p><h2>Spec sheet <span class="s">at a glance</span></h2></div>
+    <div class="tbl"><table>
+      <thead><tr><th>Product line</th><th>SKUs</th><th>Formats</th><th>Storage</th><th>Shelf life</th></tr></thead>
+      <tbody id="specrows"></tbody>
+    </table></div>
+    <p class="note">Storage and shelf life as stated in the Raw ME product catalogue. Custom flavours and recipes are available on request.</p>
+  </div>
+</section>
+
+<section id="sectors">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Find your fit</p><h2>Lines by <span class="s">sector</span></h2></div>
+    <div class="tbl"><table class="m">
+      <thead><tr><th>Product line</th><th>Hotels &amp; events</th><th>Airlines &amp; catering</th><th>Cafés &amp; restaurants</th><th>Corporate</th><th>Schools &amp; kids</th><th>Retail</th><th>Health &amp; wellness</th></tr></thead>
+      <tbody id="matrix"></tbody>
+    </table></div>
+    <p class="note">Based on the applications listed for each line in the Raw ME catalogue and institutional programmes.</p>
+  </div>
+</section>
+
+<section id="programmes">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Institutional supply</p><h2>Ready-made <span class="s">programmes</span></h2></div>
+    <div class="cols3">
+      <div class="prog"><h3>School nutrition</h3><ul><li><svg class="leaf"><use href="#leaf"/></svg>Fruit snacks</li><li><svg class="leaf"><use href="#leaf"/></svg>Juices</li><li><svg class="leaf"><use href="#leaf"/></svg>Vegan meal options</li></ul></div>
+      <div class="prog"><h3>Corporate wellness</h3><ul><li><svg class="leaf"><use href="#leaf"/></svg>Fresh juices</li><li><svg class="leaf"><use href="#leaf"/></svg>Fruit snack packs</li><li><svg class="leaf"><use href="#leaf"/></svg>Healthy meals</li></ul></div>
+      <div class="prog"><h3>Airline catering</h3><ul><li><svg class="leaf"><use href="#leaf"/></svg>Short-haul flights</li><li><svg class="leaf"><use href="#leaf"/></svg>Premium lounge</li><li><svg class="leaf"><use href="#leaf"/></svg>Crew meals</li></ul></div>
+    </div>
+    <div class="pl-band">
+      <h3>Your brand, <span class="s">our kitchen</span></h3>
+      <ul>
+        <li>Private label manufacturing across juices, spreads, mezze, snacks, cakes and fruit packs</li>
+        <li>Recipe customisation and custom juice flavours</li>
+        <li>Retail, HORECA, catering and bulk foodservice packaging</li>
+        <li>Fresh, chilled and frozen shelf-life programmes for different distribution channels</li>
+        <li>100% plant-based facility, which removes cross-contamination risk from animal products</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Recognition</p><h2>Awards &amp; <span class="s">recognition</span></h2></div>
+    <ol class="awards">
+      <li><b>2011</b><span>2nd place, Al Fikra business plan competition</span></li>
+      <li><b>2012</b><span>Best Qatar entrepreneurship business plan, Bedaya &amp; Silatech launch</span></li>
+      <li><b>2015</b><span>1st place, Entrepreneur Achievement Award, Reyada competition</span></li>
+      <li><b>2016</b><span>Qatar Development Bank SME Excellence Award, ranked #17</span></li>
+      <li><b>2019</b><span>Winner, QBIC Lean Manufacturing Programme</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Trusted by</p><h2>Our <span class="s">clients</span></h2><p class="lede">A selection of the hotels, airlines, retailers, restaurants and institutions we supply.</p></div>
+    <div class="clients">
+      <div class="cl"><h3>Hotels</h3><p>Mandarin Oriental<i>·</i>St. Regis<i>·</i>Raffles<i>·</i>Fairmont<i>·</i>W Hotels<i>·</i>Marriott<i>·</i>Hilton<i>·</i>Sheraton Grand<i>·</i>Marsa Malaz Kempinski<i>·</i>The Ned<i>·</i>Al Messila<i>·</i>Crowne Plaza<i>·</i>Holiday Inn</p></div>
+      <div class="cl"><h3>Institutions</h3><p>Qatar Airways<i>·</i>Qatar Duty Free<i>·</i>Qatar Development Bank<i>·</i>ExxonMobil<i>·</i>ConocoPhillips<i>·</i>Compass Group<i>·</i>Aman Hospital<i>·</i>Dana Club<i>·</i>Amlak</p></div>
+      <div class="cl"><h3>Retail</h3><p>Carrefour<i>·</i>Monoprix<i>·</i>LuLu<i>·</i>Mega Mart<i>·</i>Sainsbury's<i>·</i>Shoprite<i>·</i>Lagoona Mall<i>·</i>The Gate Market</p></div>
+      <div class="cl"><h3>Restaurants &amp; cafés</h3><p>Jones the Grocer<i>·</i>Wagamama<i>·</i>Carbone<i>·</i>Gaia<i>·</i>Sasso<i>·</i>Comptoir Libanais<i>·</i>Petit Camion<i>·</i>Mylk<i>·</i>Motta<i>·</i>Joe's Café<i>·</i>Aura<i>·</i>Eatgreek<i>·</i>Evergreen Organics<i>·</i>HMSHost</p></div>
+      <div class="cl"><h3>Wellness &amp; spa</h3><p>Sharq Village &amp; Spa<i>·</i>Sequences<i>·</i>Arena</p></div>
+      <div class="cl"><h3>Gyms</h3><p>Forfit Ladies<i>·</i>Warrior Fit<i>·</i>Arena</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="partner">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">How it works</p><h2>From meeting to <span class="s">supply</span></h2></div>
+    <ol class="steps">
+      <li><b>Book a meeting</b><span>Meet us during the show and tell us your outlets, volumes, guest profile and storage.</span></li>
+      <li><b>Tasting &amp; samples</b><span>We send samples of the lines that fit your menu or programme.</span></li>
+      <li><b>Specs &amp; pricing</b><span>Specification sheets, formats and a quotation for your volumes.</span></li>
+      <li><b>Trial order</b><span>A first delivery to test guest response, logistics and shelf life.</span></li>
+      <li><b>Supply agreement</b><span>Scheduled daily, weekly or programme deliveries, with private label if you need it.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow" style="color:#fff">Order or book a meeting</p><h2>Let's <span class="s">talk</span></h2><p class="lede">For more information, samples or to place an order, contact the Raw Middle East team.</p></div>
+    <div class="cgrid">
+      <div><small>Phone</small><b>+974 6613 9882</b><button type="button" data-copy="+974 6613 9882">Copy</button></div>
+      <div><small>Phone / WhatsApp</small><b>+974 5080 9900</b><button type="button" data-copy="+974 5080 9900">Copy</button></div>
+      <div><small>Email</small><b>order@raw-me.com</b><button type="button" data-copy="order@raw-me.com">Copy</button></div>
+      <div><small>Web</small><b><a href="https://www.raw-me.com" style="color:#fff">www.raw-me.com</a></b></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span>Raw Middle East · Simply Nourishing · Doha, Qatar</span><span>Hospitality Qatar 2026 · DECC · 12–14 October</span></div></footer>
+
+<script>
+const P='img/p/';
+const img=(pre,n)=>P+pre+'-'+n.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'.jpg';
+const L=[
+ {id:'meals',brand:'Raw',t:'Ready-to-eat',s:'Meals',d:'No cooking. No planning. Just consistency. Chef-built plant-based bowls for grab-and-go, meal plans and catering.',
+  items:[1,2,3,4,5,6,7,8,9].map(i=>({n:'Meal box '+i,src:P+'meal-meal'+i+'.jpg'})),showName:false,cols:3,csm:2,pcols:5,ar:1.4,
+  fmt:'Grab &amp; go · Meal plan subscription · HORECA packaging · Catering packaging',sto:'Chilled below 4°C',temp:'fresh',life:'48 hours',apps:['Grab &amp; go','Catering','Meal plan subscription'],pl:false},
+ {id:'juices',brand:'Raw',t:'Cold-pressed',s:'Juices',d:'Rich in easy-to-absorb vitamins, minerals, proteins and enzymes. Cold pressing preserves the natural nutrients.',
+  items:['Apple','Avocado','Beetroot','Carrot','Cucumber','Cocktail','Grapefruit','Guava','Green apple','Kiwi','Lemon','Lemon mint','Lemonade','Lime','Mango','Orange','Pomegranate','Pineapple','Strawberry','Watermelon'].map(n=>({n,src:img('juice',n)})).concat([{n:'Cool Crush · apple, pineapple, mint · 500 ml',src:P+'juice-cool-crush.jpg'}]),
+  cols:7,csm:3,pcols:11,ar:.55,
+  fmt:'250 ml · 330 ml · 500 ml · 1000 ml',sto:'Refrigerated 0–5°C',temp:'fresh',life:'72 hours',apps:['Consistent daily high-volume supply','Customised flavours'],pl:true},
+ {id:'spreads',brand:'Raw',t:'Plant-based',s:'Spreads',d:'Premium nut spreads from roasted nuts, enriched with superfoods. No added sugar, oil or preservatives.',
+  items:['Creamy peanut butter','Cinnamon almond butter','Chocolate almond butter','Chocolate hazelnut butter','Creamy almond butter'].map(n=>({n,src:img('spread',n)})),cols:5,csm:3,ar:1,
+  fmt:'Individual jars (retail) · Bulk packs (HORECA)',sto:'Refrigerated',temp:'fresh',life:'14 days',apps:['Hotels &amp; events','Cafés &amp; restaurants','Retail grocery','Corporate offices'],pl:true},
+ {id:'mezze',brand:'Raw',t:'Plant-based',s:'Mezze',d:'Authentic plant-based mezze for retail and institutional supply.',
+  items:['Potato harra','Baba ghanouj','Stuffed grape leaves','Hummus tahini','Taboule salad','Vegan garlic dip'].map(n=>({n,src:img('mezze',n)})),cols:3,csm:2,ar:1.15,
+  fmt:'Individual potties (retail) · Bulk packs (foodservice)',sto:'Chilled 0–4°C',temp:'fresh',life:'48 hours',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants'],pl:true},
+ {id:'snacks',brand:'Raw',t:'Vegan',s:'Snacks',d:'Granolas, trail mixes, fruit chips and kale chips with ambient shelf life.',
+  items:['Snackers delight','Heart throb',"Mama's gold",'Vibrant glow','Smokey trail mix','Banana chips','Original granola mix','Vanilla granola','Choco monkey mix','Kiwi chips','Chili kale chips','Cheesy kale chips'].map(n=>({n,src:img('snack',n)})),cols:6,csm:3,pcols:6,ar:.95,
+  fmt:'Individual packs (retail) · Bulk (HORECA)',sto:'Ambient / dry storage',temp:'amb',life:'90 days',apps:['Airlines &amp; snack boxes','Hotels &amp; minibars','Corporate offices','Schools &amp; kids programmes','Retail chains'],pl:true},
+ {id:'cakes',brand:'Raw',t:'Gluten-free',s:'Cakes',d:'Gluten-free cakes for retail, HORECA and institutional supply.',
+  items:['Hazelnut nutella cake','Apple cinnamon cake','Blueberry cheesecake','Banoffee cake','Tiramisu cake','Strawberry cheesecake','Vanilla cheesecake','Chocolate crumb pie','Super snickers cake'].map(n=>({n,src:img('cake',n)})),cols:3,csm:2,ar:1.45,full:true,
+  fmt:'Individual cakes · HORECA trays (foodservice)',sto:'Frozen −18°C',temp:'frozen',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; inflight','Corporate offices','Cafés &amp; restaurants','Health &amp; wellness programmes'],pl:true},
+ {id:'mindblown',brand:'Mind Blown · Plant Based Seafood Co.',t:'Mind Blown',s:'Seafood',d:'Frozen, ready-to-prepare plant-based seafood for HORECA, retail and institutional supply.',
+  items:['Dusted shrimp','Crab cakes'].map(n=>({n:'Plant-based '+n.toLowerCase(),src:img('mindblown',n)})),cols:2,csm:2,ar:.9,
+  fmt:'Retail packs · Bulk HORECA packs',sto:'Frozen −18°C',temp:'frozen',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants','Retail grocery','Corporate dining'],pl:false},
+ {id:'nosh',brand:'Nosh Cravings',t:'Nosh',s:'Cravings',d:'Frozen plant-based comfort food and Levantine favourites, ready to prepare.',
+  items:['Burger patty','Hot dawg','Vegan kibbeh','Spinach fatayer','Pumpkin kibbeh',"Minc'd meat","Chik'n nuggets",'Potato kibbeh','Feesh fingers'].map(n=>({n,src:img('nosh',n)})),cols:3,csm:2,ar:1.45,
+  fmt:'270 g · 400 g · 500 g · 1 kg',sto:'Frozen',temp:'frozen',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants','Corporate dining','Retail grocery'],pl:false},
+ {id:'ffjuice',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Juices',d:'Preservative-free fruit and vegetable juice blends for retail, HORECA and institutional supply.',
+  items:['Lemon mint','Sunshine sipper','Rocket fuel','Power punch','Tropical treat','Pineapple','Pomegranate','Beetroot','Watermelon','Green apple','Orange','Avocado','Guava','Mango','Carrot','Red apple','Strawberry','Lemonade'].map(n=>({n,src:img('ffjuice',n)})),cols:6,csm:3,pcols:9,ar:.55,
+  fmt:'250 ml · 1000 ml',sto:'Refrigerated 0–5°C',temp:'fresh',life:'3 days',apps:['Retail','Schools &amp; kids programmes','Cafés &amp; grab-and-go','Customised flavours'],pl:false},
+ {id:'ffpacks',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Fruit packs',d:'Fresh, clean, ready-to-eat fruit packs: pink apples with seedless grapes, and pink apple slices.',
+  items:[{n:'Pink apples &amp; seedless grapes · Pink apple slices',src:P+'ffpack-fruit-packs.jpg'}],cols:1,csm:1,ar:2.4,
+  fmt:'Individual packs (retail) · Bulk packs (HORECA)',sto:'Refrigerated 0–5°C',temp:'fresh',life:'21 days',apps:['Airlines &amp; snack boxes','Convenience stores','Hotels &amp; minibars','Schools &amp; kids programmes','Cafés &amp; grab-and-go'],pl:true},
+ {id:'ffpops',brand:'Fruity Friends · Nature’s Candy',t:'Fruity Friends',s:'Ice pops',d:'Made with 100% real fruit. Freeze. Enjoy. Repeat.',
+  items:['Sonic lime','Rocket juice pop','Mango passion','Watermelon lemon mint','Pina colada','Strawberry banana'].map(n=>({n,src:img('pop',n)})),cols:6,csm:3,pcols:6,ar:.55,
+  fmt:'Bulk packs (foodservice)',sto:'Chilled 0–4°C',temp:'fresh',life:'12 months',apps:['Hotels &amp; events','Airlines &amp; catering','Cafés &amp; restaurants','Corporate offices','Health &amp; wellness programmes'],pl:false}
+];
+// sector columns: hotels, airlines, cafes, corporate, schools, retail, wellness
+const M={meals:[1,1,1,1,1,0,0],juices:[0,0,0,1,1,0,0],spreads:[1,0,1,1,0,1,0],mezze:[1,1,1,0,0,0,0],snacks:[1,1,0,1,1,1,0],cakes:[1,1,1,1,0,0,1],mindblown:[1,1,1,1,0,1,0],nosh:[1,1,1,1,0,1,0],ffjuice:[0,0,1,1,1,1,0],ffpacks:[1,1,1,1,1,1,0],ffpops:[1,1,1,1,0,0,1]};
+const tempCls={fresh:'t-fresh',frozen:'t-frozen',amb:'t-amb'};
+const title=l=>l.t+' '+l.s;
+document.getElementById('lines').innerHTML=L.map(l=>`
+ <article class="line" id="${l.id}">
+  <div>
+   <div class="line-head"><span class="brandtag">${l.brand}</span><h3>${l.t} <span class="s" style="font-family:var(--script);font-weight:400;color:var(--teal)">${l.s}</span></h3><p>${l.d}</p></div>
+   <div class="grid" style="--cols:${l.cols};--cols-sm:${l.csm};--pcols:${l.pcols||l.cols}">
+    ${l.items.map(i=>`<figure class="card"><div class="ph" style="--ar:${l.ar}${l.full?';padding:0':''}"><img src="${i.src}" alt="${i.n.replace(/&amp;/g,'and')}"${l.full?' style="width:100%;height:100%;object-fit:cover"':''}></div>${l.showName===false?'':`<figcaption>${i.n}</figcaption>`}</figure>`).join('')}
+   </div>
+   ${l.extra?`<p class="also"><b>Also in the range:</b> ${l.extra.join(', ')}</p>`:''}
+  </div>
+  <aside class="spec" aria-label="${title(l)} specification">
+   <h4>Product <span class="s">Specification</span></h4>
+   <dl><div><dt>Formats</dt><dd>${l.fmt}</dd></div><div><dt>Storage</dt><dd>${l.sto}</dd></div><div><dt>Shelf life</dt><dd>${l.life}</dd></div><div><dt>SKUs</dt><dd>${l.id==='ffpacks'?2:l.items.length+(l.extra||[]).length}</dd></div></dl>
+   ${l.pl?'<p class="pl">Private label manufacturing available</p>':''}
+  </aside>
+  <div class="apps"><b>Applications</b>${l.apps.map(a=>`<span>${a}</span>`).join('')}</div>
+ </article>`).join('');
+document.getElementById('specrows').innerHTML=L.map(l=>`<tr><td><a href="#${l.id}">${title(l)}</a></td><td>${l.id==='ffpacks'?2:l.items.length+(l.extra||[]).length}</td><td>${l.fmt}</td><td><span class="temp ${tempCls[l.temp]}">${l.sto}</span></td><td>${l.life}</td></tr>`).join('');
+document.getElementById('matrix').innerHTML=L.map(l=>`<tr><td>${title(l)}</td>${M[l.id].map(v=>`<td>${v?'<span class="dot" role="img" aria-label="Yes"></span>':''}</td>`).join('')}</tr>`).join('');
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+  const t=b.dataset.copy;
+  navigator.clipboard?.writeText(t).then(()=>{b.textContent='Copied'},()=>{b.textContent=t}).catch(()=>{b.textContent=t});
+  setTimeout(()=>b.textContent='Copy',1800);
+}));
+</script>
