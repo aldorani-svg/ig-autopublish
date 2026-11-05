@@ -9,7 +9,7 @@ Read `CLAUDE.md`, `brands/layla-al-dorani.md` and `ops/priorities.md` first.
 ## Product line
 | Product | Format | Price | Status |
 |---|---|---|---|
-| TWIST: Qatari Cuisine with a Twist | Plant-based Qatari recipe PDF | QAR 149 | Live (sold via aldorani.com) |
+| TWIST: Qatari Cuisine with a Twist | 10-recipe plant-based Qatari PDF | QAR 149 | Live (sold via aldorani.com) |
 | Free 5-Day Gut Reset | Lead magnet | Free | Live |
 | The 90-Day Plant Reset | Self-paced 12-week program (gut, nervous system, plant-based living) | QAR 599 | In build |
 | Next products | Ideas in `ops/priorities.md` | — | Backlog |

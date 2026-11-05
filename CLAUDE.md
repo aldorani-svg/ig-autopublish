@@ -11,7 +11,7 @@ from Colorado, and the family will eventually live in Arizona. Two daughters, ag
 - **Study:** DHA doctoral student, University of Colorado Denver. HEC Paris EMBA, AU BA.
 - **Credentials:** IIN Integrative Nutrition Coach · eCornell Plant-Based Nutrition · Patient Experience Professional.
 - **Owns:** Raw Middle East LLC · Nosh Cravings · Fruity Friends.
-- **Building:** the personal brand *Layla Al-Dorani* (@laylaaldorani on IG and TikTok).
+- **Building:** the personal brand *Layla Al-Dorani* (@laylaaldorani on IG and TikTok · aldorani.com).
 
 ## The mandate right now
 Get to revenue in **60–90 days**, monetisation first, with digital products only and **no live coaching or sessions**.
@@ -31,9 +31,9 @@ start of every session and update them before you finish.
 | `chief-of-staff` | The front door. Triage, daily and weekly planning, routing to the agents below, keeping `ops/` current |
 | `personal-brand` | @laylaaldorani content, Instagram queue, TikTok scripts, voice, aesthetic |
 | `revenue` | Digital products (TWIST cookbook, 90-Day Plant Reset, future ones), launches, funnels, pricing, WhatsApp/email sales |
-| `raw-middle-east` | Raw Middle East LLC: factory, B2B/retail, QDB/Jahiz, customer list |
-| `nosh-cravings` | Nosh Cravings restaurant: menu, ops, local marketing |
-| `fruity-friends` | Fruity Friends brand |
+| `raw-middle-east` | Raw Middle East LLC (@rawmeqatar): factory, B2B/retail, QDB/Jahiz, customer list |
+| `nosh-cravings` | Nosh Cravings restaurant (@noshcravings.com · noshcravings.com): menu, ops, local marketing |
+| `fruity-friends` | Fruity Friends brand (@fruityfriends.qa) |
 | `life-ops` | Calendar, inbox triage, family logistics, the doctorate, the Arizona move, health and rest |
 
 Brand profiles, covering voice, audience, offers and rules, are in `brands/`. An agent that writes for a brand reads that brand's profile first.

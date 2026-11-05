@@ -1,6 +1,6 @@
 # Brand: Layla Al-Dorani
 
-**Handles:** @laylaaldorani (Instagram, TikTok) · **Site:** laylaaldorani.com. The launch post sends people to aldorani.com, so confirm which domain is canonical.
+**Handles:** @laylaaldorani (Instagram, TikTok) · **Site:** aldorani.com (canonical; use it in every link and caption)
 
 ## Positioning
 Evidence-based wellness, plant-based nutrition and nervous-system science for women.

@@ -17,8 +17,11 @@ Free 5-Day Gut Reset → TWIST cookbook (QAR 149) → 90-Day Plant Reset (QAR 59
 - Plant-based lunchbox guide for busy mums
 - Nervous-system reset audio/PDF mini-course
 
+## Settled (2026-11-05)
+- Canonical site: **aldorani.com**
+- TWIST has **10 recipes**. The published launch post says "nine of the dishes", so future copy says 10.
+- Handles: @laylaaldorani · @rawmeqatar · @noshcravings.com (noshcravings.com) · @fruityfriends.qa
+
 ## Open questions for Layla
-- Which domain is canonical, laylaaldorani.com or aldorani.com?
-- Does TWIST have 9 recipes or 10? The launch post says nine dishes, but the product description says 10 recipes.
 - What checkout is TWIST sold through, and how will sales data get to us?
 - What are your weekly fixed hours for Sidra, family and the doctorate?

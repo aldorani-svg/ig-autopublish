@@ -1,5 +1,7 @@
 # Brand: Raw Middle East LLC
 
+**Instagram:** @rawmeqatar
+
 **What it is:** Qatar's first plant-based food manufacturing factory. Multi-award winning. Supported through QDB (Qatar Development Bank) / Jahiz.
 
 ## Known
@@ -14,3 +16,4 @@
 - [ ] QDB/Jahiz reporting obligations and dates
 - [ ] Awards (names and years), for credibility copy
 - [ ] Brand voice and visual identity (separate from the personal brand)
+- [x] Instagram: @rawmeqatar
