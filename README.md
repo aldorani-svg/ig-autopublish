@@ -42,3 +42,11 @@ Actions tab → "Publish to Instagram" → Run workflow (dry run off).
 IG_USER_ID=... IG_ACCESS_TOKEN=... GITHUB_REPOSITORY=you/ig-autopublish \
   python3 publish.py --dry-run
 ```
+
+## Layla OS — the agent team
+This repo also runs a team of Claude agents for every brand and for life admin. Open it in Claude Code
+(claude.ai/code or the app) and talk normally. The `chief-of-staff` agent routes each request.
+- **`CLAUDE.md`** — operating manual: context, priorities, rules (draft-don't-send, Sidra firewall, family time).
+- **`.claude/agents/`** — chief-of-staff, personal-brand, revenue, raw-middle-east, nosh-cravings, fruity-friends, life-ops.
+- **`.claude/skills/`** — `/morning`, `/weekly-review`, `/new-post`, `/launch`.
+- **`brands/`** — one profile per brand. **`ops/`** — priorities, tasks, revenue log (agents keep these updated).
